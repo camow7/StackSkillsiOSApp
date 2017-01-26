@@ -29,21 +29,49 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ9-XT-7po">
-                                <rect key="frame" x="148" y="59" width="79" height="21"/>
+                                <rect key="frame" x="148" y="59.5" width="79" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GbC-91-CEq">
+                                <rect key="frame" x="139" y="176" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJ7-Fa-9K8">
+                                <rect key="frame" x="139" y="138" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hbk-oD-Snq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksQ-oe-hij">
+                                <rect key="frame" x="137.5" y="190" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SRj-Xz-K7m"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QQ9-XT-7po" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Fr-jd-PdC"/>
                             <constraint firstItem="Grc-9Q-VLp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="2Do-Wn-eyL"/>
+                            <constraint firstItem="ksQ-oe-hij" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ld-x2-WfI"/>
+                            <constraint firstItem="MJ7-Fa-9K8" firstAttribute="top" secondItem="Grc-9Q-VLp" secondAttribute="bottom" constant="10" id="BwT-Sk-UdF"/>
+                            <constraint firstItem="MJ7-Fa-9K8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NqO-PQ-nDl"/>
                             <constraint firstItem="Grc-9Q-VLp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TM8-rm-fUS"/>
+                            <constraint firstItem="ksQ-oe-hij" firstAttribute="top" secondItem="MJ7-Fa-9K8" secondAttribute="bottom" constant="20" id="dO6-BY-3Ig"/>
                             <constraint firstItem="Grc-9Q-VLp" firstAttribute="top" secondItem="QQ9-XT-7po" secondAttribute="bottom" constant="20" id="tJ5-CE-RCC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="MJ7-Fa-9K8" id="pHY-ob-bhd"/>
+                        <outlet property="text2" destination="ksQ-oe-hij" id="vNC-lx-lPR"/>
                         <outlet property="theLabel" destination="QQ9-XT-7po" id="pRY-FX-TkR"/>
                     </connections>
                 </viewController>
